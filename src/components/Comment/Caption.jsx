@@ -20,8 +20,8 @@ const Caption = ({ post }) => {
 					</Link>
 					<Text fontSize={14}>{post.caption}</Text>
 				</Flex>
-				<Text fontSize={12} color={"gray"}>
-					{timeAgo(post.createdAt)}
+				<Text fontSize={12} color={"gray"} display={"flex"}>
+					<Text fontWeight={"bold"}>Posted</Text> : {timeAgo(post.createdAt)}
 				</Text>
 			</Flex>
 		</Flex>

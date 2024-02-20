@@ -165,8 +165,12 @@ const ProfilePost = ({ post }) => {
 
 								<VStack w='full' alignItems={"start"} maxH={"350px"} overflowY={"auto"}>
 									{/* CAPTION */}
-									{post.caption && <Caption post={post} />}
-									<Divider my={2} bg={"white"} _light={{ borderColor: "black" }} />
+									{post.caption &&
+										<>
+											<Caption post={post} />
+											<Divider my={2} bg={"white"} _light={{ borderColor: "black" }} />
+										</>
+									}
 									{/* COMMENTS */}
 									{post.comments.map((comment) => (
 										<Comment key={comment.id} comment={comment} />
