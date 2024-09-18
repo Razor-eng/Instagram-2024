@@ -8,7 +8,7 @@ const Comment = ({ comment }) => {
 
 	if (isLoading) return <CommentSkeleton />;
 	return (
-		<Flex gap={4} w={"full"} _light={{ borderColor: "gray.400" }} borderBottom={"1px solid"} borderColor={"gray.800"} paddingBottom={"9px"}>
+		<Flex gap={4} w={"full"} _light={{ borderColor: "gray.300" }} borderBottom={"1px solid"} borderColor={"gray.800"} paddingBottom={"9px"}>
 			<Link to={`/${userProfile.username}`}>
 				<Avatar src={userProfile.profilePicURL} size={"sm"} />
 			</Link>

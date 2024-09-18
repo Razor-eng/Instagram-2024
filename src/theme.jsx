@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { extendTheme } from "@chakra-ui/react"
 import { mode } from '@chakra-ui/theme-tools'
 
@@ -9,8 +10,8 @@ const theme = {
     styles: {
         global: (props) => ({
             body: {
-                bg: mode("gray.100", "#000")(props),
-                color: mode("gray.800", "whiteAlpha.900")(props),
+                bg: mode("zinc.100", "zinc.900")(props),
+                color: mode("zinc.800", "whiteAlpha.900")(props),
             }
         })
     }

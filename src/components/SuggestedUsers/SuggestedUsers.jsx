@@ -18,7 +18,7 @@ const SuggestedUsers = () => {
 					<Text fontSize={12} fontWeight={"bold"} color={"gray.500"}>
 						Suggested for you
 					</Text>
-					<Text fontSize={12} fontWeight={"bold"} _hover={{ color: "gray.400" }} cursor={"pointer"}>
+					<Text fontSize={12} fontWeight={"bold"} _hover={{ color: "gray.300" }} cursor={"pointer"}>
 						See All
 					</Text>
 				</Flex>
@@ -30,7 +30,7 @@ const SuggestedUsers = () => {
 
 			<Box fontSize={12} color={"gray.500"} mt={5} alignSelf={"start"}>
 				© 2023 Built By{" "}
-				<Link href='https://rajat-kumar-maharana.vercel.app/' target='_blank' color='blue.500' fontSize={14} _hover={{ bg: "transparent", color: "white", textDecoration: "underline", textDecorationColor: "gray.300" }} _light={{ _hover: { color: "gray.400" } }}>
+				<Link href='https://rajat-kumar-maharana.vercel.app/' target='_blank' color='blue.500' fontSize={14} _hover={{ bg: "transparent", color: "white", textDecoration: "underline", textDecorationColor: "gray.300" }} _light={{ _hover: { color: "gray.300" } }}>
 					Rajat Kumar Maharana
 				</Link>
 			</Box>

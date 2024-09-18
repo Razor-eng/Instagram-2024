@@ -28,7 +28,7 @@ import PostFooter from "../FeedPosts/PostFooter";
 import useUserProfileStore from "../../store/userProfileStore";
 import useAuthStore from "../../store/authStore";
 import useShowToast from "../../hooks/useShowToast";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { deleteObject, ref } from "firebase/storage";
 import { firestore, storage } from "../../firebase/firebase";
 import { arrayRemove, deleteDoc, doc, updateDoc } from "firebase/firestore";
@@ -118,7 +118,7 @@ const ProfilePost = ({ post }) => {
 				<ModalOverlay />
 				<ModalContent>
 					<ModalCloseButton />
-					<ModalBody bg={"#121212"} _light={{ bg: "gray.300" }} pb={5}>
+					<ModalBody bg={"#121212"} _light={{ bg: "gray.100" }} pb={5}>
 						<Flex
 							gap='4'
 							w={{ base: "90%", sm: "70%", md: "full" }}
@@ -131,7 +131,7 @@ const ProfilePost = ({ post }) => {
 								overflow={"hidden"}
 								border={"1px solid"}
 								borderColor={"whiteAlpha.300"}
-								_light={{ borderColor: "gray.400" }}
+								_light={{ borderColor: "gray.300" }}
 								flex={1.5}
 								justifyContent={"center"}
 								alignItems={"center"}
@@ -172,8 +172,8 @@ const ProfilePost = ({ post }) => {
 										</>
 									}
 									{/* COMMENTS */}
-									{post.comments.map((comment) => (
-										<Comment key={comment.id} comment={comment} />
+									{post.comments.map((comment, id) => (
+										<Comment key={id} comment={comment} />
 									))}
 								</VStack>
 
@@ -196,7 +196,7 @@ const ProfilePost = ({ post }) => {
 						</AlertDialogHeader>
 
 						<AlertDialogBody>
-							Are you sure? You can't undo this action afterwards.
+							Are you sure? You {`can't`} undo this action afterwards.
 						</AlertDialogBody>
 
 						<AlertDialogFooter>
@@ -215,5 +215,3 @@ const ProfilePost = ({ post }) => {
 };
 
 export default ProfilePost;
-
-const DeletePostModal = () => { }

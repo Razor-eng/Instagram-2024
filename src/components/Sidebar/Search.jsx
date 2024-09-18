@@ -63,7 +63,7 @@ const Search = () => {
 
 			<Modal isOpen={isOpen} onClose={onClose} motionPreset='slideInLeft'>
 				<ModalOverlay />
-				<ModalContent _light={{ bg: "gray.300" }} bg={"#121212"} border={"1px solid gray"} maxW={"400px"}>
+				<ModalContent _light={{ bg: "gray.100" }} bg={"#121212"} border={"1px solid gray"} maxW={"400px"}>
 					<ModalHeader>Search user</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody pb={6}>
@@ -74,7 +74,7 @@ const Search = () => {
 							</FormControl>
 
 							<Flex w={"full"} justifyContent={"flex-end"}>
-								<Button type='submit' ml={"auto"} size={"sm"} my={4} isLoading={isLoading} _light={{ bg: "gray.400", _hover: { bg: "blue.300" } }}>
+								<Button type='submit' ml={"auto"} size={"sm"} my={4} isLoading={isLoading} _light={{ bg: "gray.300", _hover: { bg: "blue.300" } }}>
 									Search
 								</Button>
 							</Flex>

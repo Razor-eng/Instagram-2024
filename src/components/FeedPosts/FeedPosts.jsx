@@ -29,7 +29,7 @@ const FeedPosts = () => {
 					<Text fontSize={{ base: "lg", lg: "2xl" }} textAlign={{ base: "start", lg: "center" }} color={"white"} marginTop={{ base: "90%", lg: "30%" }} _light={{ color: "gray" }}>
 						Dayuum. Looks like you don&apos;t have any friends.
 					</Text>
-					<Text fontSize={{ base: "md", lg: "xl" }} textAlign={{ base: "start", lg: "center" }} color={"gray.400"}>Stop coding and go make some!!</Text>
+					<Text fontSize={{ base: "md", lg: "xl" }} textAlign={{ base: "start", lg: "center" }} color={"gray.300"}>Stop coding and go make some!!</Text>
 				</>
 			)}
 		</Container>

@@ -33,7 +33,7 @@ const ProfileHeader = () => {
 								bg={"white"}
 								color={"black"}
 								_hover={{ bg: "whiteAlpha.800" }}
-								_light={{ bg: "gray.400", _hover: { bg: "blue.300" } }}
+								_light={{ bg: "gray.300", _hover: { bg: "blue.300" } }}
 								size={{ base: "xs", md: "sm" }}
 								onClick={onOpen}
 							>

@@ -25,7 +25,7 @@ const SuggestedHeader = () => {
 				size={"xs"}
 				background={"transparent"}
 				_hover={{ bg: "transparent", color: "white" }}
-				_light={{ _hover: { color: "gray.400" } }}
+				_light={{ _hover: { color: "gray.300" } }}
 				fontSize={14}
 				fontWeight={"medium"}
 				color={"blue.400"}

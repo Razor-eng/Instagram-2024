@@ -30,7 +30,7 @@ const PageLayout = ({ children }) => {
 			{canRenderNavbar ? <Navbar /> : null}
 			{/* the page content on the right */}
 			<Button onClick={() => toggleColorMode()} position={"absolute"} top={"0"} right={"0"} background={"transparent"}>
-				{colorMode === "dark" ? <SunIcon color={"orange.400"} /> : <MoonIcon color={"blue.700"} />}
+				{colorMode === "dark" ? <SunIcon color={"orange.400"} /> : <MoonIcon color={"zinc.700"} />}
 			</Button>
 			<Box flex={1} w={{ base: "calc(100% - 70px)", md: "calc(100% - 240px)" }} mx={"auto"}>
 				{children}

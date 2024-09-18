@@ -10,7 +10,7 @@ const ProfileTabs = () => {
 			textTransform={"uppercase"}
 			fontWeight={"bold"}
 		>
-			<Flex borderTop={"1px solid white"} alignItems={"center"} p='3' gap={1} cursor={"pointer"}>
+			<Flex borderTop={"1px solid"} borderColor={"whiteAlpha.700"} _light={{ borderColor: "black" }} alignItems={"center"} p='3' gap={1} cursor={"pointer"}>
 				<Box fontSize={20}>
 					<BsGrid3X3 />
 				</Box>
